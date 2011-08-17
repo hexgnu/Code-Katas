@@ -1,0 +1,21 @@
+##Some things in supermarkets have simple prices: this can of beans costs $0.65. Other things have more complex prices. For example:##
+
+- three for a dollar (so what’s the price if I buy 4, or 5?)
+    - Three for a dollar can be defined in two separate ways.  
+    - For instance if we define 3 / $1 as a rational number and say that you can only get in 3 item increments
+    - Also you can say that since 1/3 =~ 0.33 you can make [0.34, 0.33, 0.33] so they all add up to 1 dollars and if you buy one then you charge 0.34 cents  Using this methodology.  Then for 4 or 5 items it would cost (1 + 0.34) = 1.34 for 4 and (1 + 0.34 + 0.33) = 1.67
+- $1.99/pound (so what does 4 ounces cost?)
+    - Again two ways of doing this.  One could be taking (1.99 / 16) = 0.12 (1.99 - (15 * 0.12)) = 0.19.  So 0.19 cents for the first one and 12 cents for the rest
+    - Another way is to distribute evenish and say the first 7 get an extra cent added onto it so [0.13 * 7 + 0.12 * 9]
+- buy two, get one free (so does the third item have a price?)
+    - You can look at this two different ways.  one of them is the average cost model where you say that if I buy three how much on average did I pay for each.  This would mean that you paid 1 / 3 of the total price for each.  So this would be (2 * p / 3)
+- Does fractional money exist?
+    - No by definition money is only two decimal points
+- When if ever does rounding take place?
+    - Rounding doesn't really take place in a system with only two decimal points you need to move the money somewhere
+- How do you keep an audit trail of pricing decision (and do you need to)?
+    - You just have a POS system that tracks how much someone spent for something.  You can have an item sold for 0.33 or 0.34 cents a piece depending on where it is in sale
+- Are costs and prices the same class of thing?
+    - No not really.  Cost is what you end up paying for something while price is just an arbitrary number.
+- If a shelf of 100 cans is priced using "buy two, get one free" how do you value the stock?
+    - You value the stock as 100 cans and when someone buys things for a buy two get one free then you discount at register.
