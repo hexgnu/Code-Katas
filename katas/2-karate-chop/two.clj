@@ -7,8 +7,8 @@
         (r (fn [x] ((f f) x))))))
    
    (defn chop [n lst]
-     (Y (fn [func] (fn [l h i ia] 
-       ()
+     (Y (fn [func] (fn [low high i ia] 
+		(if (< high low) -1)
      )))
      0 (- (count lst) 1) n lst
    )
